@@ -17,10 +17,12 @@ export class BerekenPage extends BasePage {
     await this.elementIsVisible(this.RADIOBUTTONS_GAS);
     await this.elementIsVisible(this.RADIOBUTTONS_STROOM);
     await this.elementIsVisible(this.RADIOBUTTONS_EG);
+    console.log("Select type of energy");
   }
 
   async selectEnergyType(): Promise<void> {
     await this.clickElement(this.RADIOBUTTONS_EG);
+    console.log("Selected electricity and gas");
   }
 
   async clickVolgende(): Promise<void> {

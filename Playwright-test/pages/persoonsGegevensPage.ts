@@ -26,6 +26,7 @@ export class PersoonsGegevensPage extends BasePage {
     );
     await this.elementIsVisible(this.MEVR_BUTTON);
     await this.elementIsVisible(this.DHR_BUTTON);
+    console.log("Fill in personal data");
   }
 
   async inputGegevensData(

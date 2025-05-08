@@ -34,6 +34,7 @@ export class SolarPanelPage extends BasePage {
   async verifyAndSelectSolarPanelButtons(): Promise<void> {
     await this.clickElement(this.HAS_PANELS_RADIOBUTTON);
     await this.clickElement(this.NO_PANELS_RADIOBUTTON);
+    console.log("Selected  No solar panel");
   }
 
   async clickVolgende(): Promise<void> {

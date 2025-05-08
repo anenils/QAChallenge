@@ -18,6 +18,7 @@ export class VerbruikPage extends BasePage {
       this.RADIOBUTTONS_LABELS,
       "Nee, help mij inschatten"
     );
+    console.log("Select how to estimate the energy usage");
   }
 
   async verifyAndSelectUsageButton(): Promise<void> {

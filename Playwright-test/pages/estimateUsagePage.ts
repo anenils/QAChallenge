@@ -63,6 +63,7 @@ export class EstimateVerbruikPage extends BasePage {
 
   async selectRadioButton(): Promise<void> {
     await this.clickElement(this.HAS_SLIMMETER_RADIOBUTTON);
+    console.log("Selected slimme meter");
   }
 
   async inputConsumption(
@@ -79,6 +80,7 @@ export class EstimateVerbruikPage extends BasePage {
       lowUsageElectricity.toString()
     );
     await this.page.fill(this.VERBRUIK_INPUT_GAS, usageGas.toString());
+    console.log("Filled in usage for Electricity and Gas");
   }
 
   async clickVolgende(): Promise<void> {

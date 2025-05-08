@@ -16,5 +16,6 @@ export class AanbodPage extends BasePage {
   async clickNaarJeGegevens(): Promise<void> {
     await this.elementIsVisible(this.NAAR_JE_GEGEVENS);
     await this.clickElement(this.NAAR_JE_GEGEVENS);
+    console.log("Selected 1 year contract");
   }
 }

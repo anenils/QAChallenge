@@ -36,6 +36,7 @@ export class ProductKeuzePage extends BasePage {
 
   async selecProduct(): Promise<void> {
     await this.clickElement(this.FIXED_RADIOBUTTON);
+    console.log("Selected fixed price contract");
   }
 
   async clickVolgende(): Promise<void> {

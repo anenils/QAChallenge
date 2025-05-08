@@ -12,5 +12,6 @@ export class ControlePage extends BasePage {
       "Controleer je gegevens, vul je rekeningnummer in en plaats je bestelling onderaan de pagina."
     );
     await this.page.locator(this.AANMELDEN_MAANDELIJKS_BETALEN).isVisible();
+    console.log("Last confirm page");
   }
 }

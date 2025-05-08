@@ -26,6 +26,7 @@ export class VerhuizenPage extends BasePage {
     );
     await ISMOVING_RADIOBUTTON.waitFor({ state: "visible", timeout: 30000 });
     await this.clickLocator(ISMOVING_RADIOBUTTON);
+    console.log("Selected moving to new house");
   }
 
   async clickVolgende(): Promise<void> {

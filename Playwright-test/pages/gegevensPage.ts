@@ -20,6 +20,7 @@ export class GegevensPage extends BasePage {
       this.CALENDAR_TITLE,
       "Startdatum levering"
     );
+    console.log("Select date of delivery");
   }
 
   async clickVolgende(): Promise<void> {
