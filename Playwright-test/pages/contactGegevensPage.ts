@@ -13,7 +13,7 @@ export class ContactGegevensPage extends BasePage {
       this.CONTACT_GEGEVENS_PARAGRAPH,
       "Als we een vraag hebben, nemen we contact met je op."
     );
-    console.log("Contact dat  phone and email");
+    console.log("Fill in Contact information phone and email");
   }
 
   async inputContactData(TEL: string, ADDRESS: string): Promise<void> {
