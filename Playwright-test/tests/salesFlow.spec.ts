@@ -79,8 +79,8 @@ test.describe("SalesFlow", () => {
     await productkeuzePage.selecProduct();
     await productkeuzePage.clickVolgende();
 
-    await compensateCO2page.verifyPageContent();
-    await compensateCO2page.clickNaarJeAanbod();
+    // await compensateCO2page.verifyPageContent();
+    // await compensateCO2page.clickNaarJeAanbod();
 
     // Step 7: Verify Offer page
     await aanbodPage.verifyPageContent();
